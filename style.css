@@ -7,13 +7,6 @@ body{
     color: azure;
 }
 
-.header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 100px;
-}
-
 .footer{
     margin-top: 20px;
     display: flex;

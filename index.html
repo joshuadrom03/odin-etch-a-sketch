@@ -10,15 +10,14 @@
 <body>
     
 <h1>Etch-A-Sketch</h1>
-<div class="header">
     <h3>Select the size</h3>
     <button id="prompt">Select</button>
-</div>
+<p id="message"></p>
 <div class="container"></div>
 <div class="footer">
-    <button>Black</button>
-    <button>Random</button>
-    <button>Reset</button>
+    <button onclick="setColor('black')">Black</button>
+    <button onclick="setColor('random')">Random</button>
+    <button onclick="resetBoard()">Reset</button>
 </div>
 
     <script src="script.js"></script>
