@@ -1,9 +1,17 @@
 let color = "black";
-
+let click = false;
 
 document.addEventListener("DOMContentLoaded", function(){
     createBoard(16);
     
+    document.querySelector("body").addEventListener("click", function(e){
+
+        if(e.target.tagName != "BUTTON"){
+            click  = !click;
+
+        }
+    })
+
     let btn_prompt = document.querySelector("#prompt");
     btn_prompt.addEventListener("click", function(){
         let size = getSize();
@@ -45,11 +53,13 @@ function getSize(){
 
 function colorDiv(){
 
-    if(color == "random"){
-        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    if(click){
+        if(color == "random"){
+            this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
 
-    } else{
-        this.style.backgroundColor = 'black';
+        } else{
+            this.style.backgroundColor = 'black';
+        }
     }
 }
 
