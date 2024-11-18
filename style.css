@@ -3,6 +3,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #191E29;
+    color: azure;
 }
 
 .header{
@@ -13,6 +15,7 @@ body{
 }
 
 .footer{
+    margin-top: 20px;
     display: flex;
     align-items: center;
     gap: 50px;
